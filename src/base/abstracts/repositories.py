@@ -35,7 +35,7 @@ class AbstractRepository(AbstractGenericClass[TModel]):
         self._commit()
         self._refresh()
         return obj
-    
+        
     def delete(self, obj: TModel):
         db.delete(obj)
         self._commit()
